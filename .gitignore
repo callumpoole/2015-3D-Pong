@@ -4,6 +4,8 @@
 *.vcxproj*
 *.sln
 *.idb
+.vs/*
+
 
 ## Ignore Make files - using premake, so we don't want them versioned
 *.make
@@ -206,3 +208,9 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+#Exceptions
+!bin/glew32.dll
+!bin/SDL2.dll
+!bin/bunny.obj
+!graphics_dependencies/glew/lib/Release/*
