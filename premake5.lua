@@ -1,4 +1,6 @@
 
+-- Disclaimer, all of this was written by my teacher at the time, I don't know premake what so ever
+
 -- A solution contains projects, and defines the available configurations
 solution "graphicsByExample"
    targetdir ( "bin" )
@@ -31,7 +33,8 @@ solution "graphicsByExample"
           configuration "windows"
           includedirs {
                         "./graphics_dependencies/SDL2/include",
-                        "./graphics_dependencies/glew/include"
+                        "./graphics_dependencies/glew/include",
+						"./graphics_dependencies/glm"
                       }
           configuration { "linux" }
           includedirs {
@@ -42,7 +45,7 @@ solution "graphicsByExample"
 
           -- what libraries need linking to
           configuration "windows"
-             links { "SDL2", "SDL2main", "opengl32", "glew32" }
+             links { "SDL2", "SDL2main", "opengl32", "glew32"}
           configuration "linux"
              links { "SDL2", "SDL2main", "GL", "GLEW" }
           configuration {}
@@ -69,7 +72,4 @@ solution "graphicsByExample"
           configuration "*Release"
              defines { "NDEBUG" }
              optimize "On"
-
-          configuration "windows"
-             postbuildcommands { "post-build-event.bat" }
    end
