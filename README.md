@@ -15,3 +15,11 @@ Controls:
 | Move Mouse    | Pivot View                          |
 | 1, 2, 3       | Change View Mode                    |
 | Space         | Reset the game after player has won |
+
+Steps to run:
+
+1) open cmd, nagivate to that dir
+2) Type in: premake5 vs2015
+3) Open newest VS, upgrade the project version
+
+(I'm lazy to upgrade this old project further)
