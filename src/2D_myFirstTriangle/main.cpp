@@ -19,8 +19,8 @@
 #endif
 
 #include <GL/glew.h>
-#include <SDL.h>
-#include <glm\glm.hpp>
+#include <SDL2/SDL.h>
+#include <glm/glm.hpp>
 
 #include "GameObject.h"
 #include "MeshGenerator.h"
