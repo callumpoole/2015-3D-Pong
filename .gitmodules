@@ -1,4 +1,4 @@
 [submodule "graphics_dependencies"]
 	path = graphics_dependencies
-	url = https://github.com/callumpoole/2015_graphics_dependencies_module
+	url = https://github.com/callumpoole/2015_graphics_dependencies_module.git
 	branch = master
