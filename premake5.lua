@@ -2,7 +2,7 @@
 -- Disclaimer, all of this was written by my teacher at the time, I don't know premake what so ever
 
 -- A solution contains projects, and defines the available configurations
-solution "graphicsByExample"
+solution "3D-Pong"
    targetdir ( "bin" )
    configurations { "Debug", "Release"}
 
